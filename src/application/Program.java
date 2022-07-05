@@ -18,7 +18,7 @@ public class Program {
 
         ProductService ps = new ProductService();
 
-        double soma = ps.somaPorNome(list);
+        double soma = ps.somaPorNome(list, p -> p.getName().charAt(0) == 'T');
 
         System.out.println("sum= " + String.format("%.2f", soma));
 
